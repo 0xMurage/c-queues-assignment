@@ -26,7 +26,7 @@ int main() {
     }
 
     //print a message to indicate program has completed
-    printf("End of Program - *  @Mimimidotsuser * \n");
+    printf("End of Program - *  murage@labskenya.com * \n");
     printf("Number of printer jobs left in queue:  %d \n", getPrinterQueueSize(head));
 
     return 0;
