@@ -29,7 +29,5 @@ int main() {
     printf("End of Program - *  @Mimimidotsuser * \n");
     printf("Number of printer jobs left in queue:  %d \n", getPrinterQueueSize(head));
 
-    clearList(&head);
-
     return 0;
 }

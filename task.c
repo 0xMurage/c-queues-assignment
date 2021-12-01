@@ -6,9 +6,9 @@
 LIST_NODE *createPrinterJob(int docNumber) {
 
     //create new printerJobNode
-    LIST_NODE *printerJobNode = malloc(sizeof(struct node));
+    LIST_NODE *printerJobNode = malloc(sizeof(LIST_NODE));
 
-    printerJobNode->dataPtr = malloc(sizeof(struct document)); //allocate memory for document data
+    printerJobNode->dataPtr = malloc(sizeof(Document)); //allocate memory for document data
     printerJobNode->next = NULL; // the next should point to a null
 
     printerJobNode->dataPtr->cycle = 0;
@@ -102,15 +102,6 @@ void incrementCycle(LIST_NODE **head, int cyclesTaken) {
         }
 
 
-        current = current->next;
-    }
-}
-
-void clearList(LIST_NODE **head) {
-
-    LIST_NODE *current = (LIST_NODE *) *head;
-    while (current != NULL) {
-        free(current->dataPtr);
         current = current->next;
     }
 }

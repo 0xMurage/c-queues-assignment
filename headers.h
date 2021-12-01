@@ -28,7 +28,6 @@ int printDocument(Document *document);
 
 void incrementCycle(LIST_NODE **list, int cycles);
 
-void clearList(LIST_NODE **list);
 
 void debugList(LIST_NODE *list);
 
